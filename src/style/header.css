@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.nav-item {
+    padding-left: 10px;
+}
+
+.separator {
+    background-image: url();
+    background-size: 10px 15px;
+    background-repeat: no-repeat;
+}
