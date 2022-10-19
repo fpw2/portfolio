@@ -1,5 +1,5 @@
 export default function Home() {
     return (
-        <div>Page Home</div>
+        <section id="screen-home">Page Home</section>
     )
 }

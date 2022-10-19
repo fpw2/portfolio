@@ -3,13 +3,6 @@
     margin: 0;
 }
 
-:root {
-    --primary: #FF6060 ;
-    --white: #FFFFFF;
-    --bg: #F7F7F7;
-    --bg-footer: black;
-}
-
 h1 {
     font-size: 48px;
 }
