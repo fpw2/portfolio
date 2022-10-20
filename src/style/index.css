@@ -4,8 +4,13 @@
 
 :root {
   --primary: #FF6060 ;
-  --white: #FFFFFF;
+  --text: #FFFFFF;
   --bg-home: #005A82;
   --bg: #F7F7F7;
   --bg-footer: black;
+}
+
+.container {
+  height: 937px;
+  background-color: var(--bg-home);
 }

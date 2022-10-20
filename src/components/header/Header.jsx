@@ -9,7 +9,7 @@ export default function Header() {
         <div>
             <nav className="nav">
                 <li className="nav-item">
-                    <NavLink to="/home" style={({isActive}) => (isActive ? activeStyle : undefined)}>HOME</NavLink>
+                    <NavLink to="/" style={({isActive}) => (isActive ? activeStyle : undefined)}>HOME</NavLink>
                 </li>
                 <li className="separator"></li>
                 <li className="nav-item">

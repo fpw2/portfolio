@@ -1,11 +1,15 @@
 .nav {
     display: flex;
     justify-content: flex-end;
-    margin: 20px;
+    padding: 20px;
 }
 
 .nav-item {
     padding-left: 10px;
+}
+
+.nav-item a {
+    color: var(--text) ;
 }
 
 .separator {
