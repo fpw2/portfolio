@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {BrowserRouter, Routes, Route, Redirect} from "react-router-dom"
 import Header from "./header/Header"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -14,7 +14,9 @@ export default function App() {
       <div className="container">
         <Header />
             <Routes>
-              <Route path="/" element={<Home />}></Route>
+              <Route path="/" element={<Home />}>
+                <Redirect to="/home" />
+              </Route>
               <Route path="/about" element={<About />}></Route>
               <Route path="/skills" element={<Skills />}></Route>
               <Route path="/work" element={<Work />}></Route>
