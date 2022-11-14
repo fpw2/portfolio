@@ -1,32 +1,32 @@
-import {BrowserRouter, Routes, Route, Redirect} from "react-router-dom"
-import Header from "./header/Header"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Skills from "./pages/Skills"
-import Work from "./pages/Work"
-import Contact from "./pages/Contact"
-import Error from "./error/Error"
-import Footer from "./footer/Footer"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Container } from "./Container";
+import Header from "./header";
+import Home from "./home";
+import About from "./about";
+import Skills from "./skills";
+import Work from "./work";
+import Contact from "./contact";
+import Error from "./error/Error";
+import Footer from "./footer/Footer";
+import { AnimatePresence } from "framer-motion";
 
 export default function App() {
-    return (
-      <BrowserRouter>
-      <div className="container">
+  const location = useLocation();
+  return (
+      <Container>
         <Header />
-            <Routes>
-              <Route path="/" element={<Home />}>
-                <Redirect to="/home" />
-              </Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/skills" element={<Skills />}></Route>
-              <Route path="/work" element={<Work />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>             
-              <Route path="*" element={<Error />}></Route>
-            </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
-    ) 
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/skills" element={<Skills />}></Route>
+            <Route path="/work" element={<Work />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="*" element={<Error />}></Route>
+          </Routes>
+        </AnimatePresence>
+      </Container>
+  );
 }
 
 

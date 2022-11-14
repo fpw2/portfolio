@@ -1,0 +1,75 @@
+.about {
+    background-color: $bg-about;
+    animation: fadeIn .5s ease-in-out;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper-interests {
+    position: relative;
+    
+    .circle-left {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        border: 10px solid white;
+        border-right: none;
+        border-radius: 50%;
+        top: -20px;
+        left: -30px;
+    
+    }
+    .about-interests {
+        display: flex;
+        border: 5px solid white;
+        border-left: none;
+        border-right: none;
+        border-radius: 10px;
+        height: 159px;
+        min-width: 600px;
+        justify-content: center;
+        .interests-item {
+            padding: 10px;
+            align-self: center;
+            p {
+                font-size: 48px;
+            }
+        .animate-1 {
+            animation: slide 1s;
+        }
+        .animate-2 {
+            animation: slide 2s;
+        }
+        .animate-3 {
+            animation: slide 3s;
+        }
+
+        }
+    
+    }
+    .circle-right {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        border: 10px solid white;
+        border-right: none;
+        border-radius: 50%;
+        top: -20px;
+        right: -30px;
+    }
+}
+
+.tabs ul {
+    display: flex;
+    li {
+        padding: 10px;
+    }
+}
+
+@keyframes slide {
+    0%{ transform: translate(-100%, 0px);}
+    100%{ transform: translate(0%, 0px);}
+}

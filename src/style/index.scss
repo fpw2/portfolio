@@ -1,0 +1,200 @@
+@import "./variables.scss";
+@import "./base.scss";
+@import "./header.scss";
+@import "./home.scss";
+@import "./about.scss";
+@import "./skills.scss";
+@import "./work.scss";
+@import "./contact.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto&display=swap');
+
+body {
+  font-family: "Poor Story";
+  color: $text;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  40% {
+    transform: translateY(-30px);
+    opacity: .5;
+  }
+
+  60% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translatey(-40px);
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  70% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes workFadeInOne {
+  0% {
+    opacity: 0;
+    transform: translate(-500px, 400px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInTwo {
+  0% {
+    opacity: 0;
+    transform: translate(-500px, 500px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInThree {
+  0% {
+    opacity: 0;
+    transform: translate(-500px, 600px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInFour {
+  0% {
+    opacity: 0;
+    transform: translate(500px, 600px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInFive {
+  0% {
+    opacity: 0;
+    transform: translate(500px, 700px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInSix {
+  0% {
+    opacity: 0;
+    transform: translate(500px, 800px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes workFadeInSeven {
+  0% {
+    opacity: 0;
+    transform: translate(500px, 900px);
+
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

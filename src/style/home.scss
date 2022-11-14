@@ -1,0 +1,51 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: $bg-home;
+    animation: fadeIn .5s ease-in-out;
+    height: 100vh; 
+}
+
+.home-name {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    color: $secondary-1;
+    animation: bounce 1s;
+}
+
+
+.home-describe {
+    font-size: 48px;
+    color: $secondary-3;
+    animation: fade-in-left 1.5s;
+}
+
+.learn-more {
+    margin-top: 20px;
+    animation: bounce-in 3s;
+}
+
+.learn-more a {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    color: $secondary-1;
+
+    &:hover {
+        background-color: $secondary-2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home-name {
+        font-size: 48px;
+    }
+
+    .home-describe {
+        font-size: 32px;
+    }
+}
+

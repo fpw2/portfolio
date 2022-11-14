@@ -1,0 +1,77 @@
+.work {
+    min-height: 937px;
+    background-color: $bg-work;
+    text-align: center;
+}
+
+.work-wrapper{
+    padding-top: 100px;
+}
+
+.work-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-work {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    margin: 10px 10px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+  }
+  
+  .work-1 {
+    animation: workFadeInOne 1s;
+  }
+  
+  .work-2 {
+    animation: workFadeInTwo 1s;
+  }
+  
+  .work-3 {
+    animation: workFadeInThree 1s;
+  }
+  
+  .work-4 {
+    animation: workFadeInFour 1s;
+  }
+  
+  .work-5 {
+    animation: workFadeInFive 1s;
+  }
+  
+  .work-6 {
+    animation: workFadeInSix 1s;
+  }
+  
+  .work-7 {
+    animation: workFadeInSeven 1s;
+  }
+  
+  .card-image {
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: left;
+  }
+  
+  .card-title  {
+    color: $secondary-4;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $neutral-6;
+  }

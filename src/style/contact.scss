@@ -1,0 +1,91 @@
+.contact {
+    background-color: $bg-contact;
+    // animation: fadeIn .5s ease-in-out;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.border-ext {
+    animation: bounce-in-right 1s;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 850px;
+    height: 486px;
+    z-index: 1;
+    background-image: url("../assets/images/petit_point.png");
+    background-position: center 0;
+    z-index: 1;
+}
+
+.border-int {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    border: 2px solid white;
+    height: 426px;
+    z-index: 1;
+}
+
+.contact-left {
+    border-right: thick double ;
+    width: 45%;
+    margin: 20px 20px;
+    .contact-header {
+        display: flex;
+        img {
+            padding-right: 20px;
+        }
+        .contact-name{
+            font-size: 36px;
+        }
+        .contact-job {
+            font-size: 28px;
+        }
+    }
+    .contact-describe {
+        margin-top: 30px;
+        .contact-location, .contact-mail, .contact-linkedin {
+            display: flex;
+            padding-top: 10px;
+            .icon-location {
+                align-self: center;
+                padding-right: 15px;
+                padding-left: 3px;
+            }
+            .location {
+                font-size: 22px;
+            }
+            .icon-mail {
+                align-self: center;
+                padding-right: 10px;
+            }
+            .mail {
+                font-size: 22px;
+            }
+            .icon-linkedin {
+                align-self: center;
+                padding-right: 12px;
+                padding-left: 2px;
+            }
+            .linkedin {
+                font-size: 22px;
+            }
+        }
+
+    }
+}
+
+.contact-right {
+    position: relative;
+    width: 50%;
+}
+
+
+.contact-timbre {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

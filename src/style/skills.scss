@@ -1,0 +1,75 @@
+.skills {
+    background-color: $bg-skills;
+    // animation: fadeIn .5s ease-in-out;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.skills-wrapper {
+    margin-top: 70px;
+    display: flex;
+    padding: 40px 0;
+}
+
+.html {
+    animation: bounce-in-right 1s
+}
+
+.js {
+    animation: bounce-in-right 2s
+}
+
+.skills-name {
+    width: 50%;
+    align-self: center;
+    font-size: 48px;
+}
+
+.skills-describe {
+    width: 40%;
+    font-size: 24px;
+    text-align: start;
+}
+
+.title-knowledge {
+    align-self: center;
+    font-size: 18px;
+    animation: fadeInTitle 2s;
+}
+
+.skills-knowledge {
+    display: flex;
+}
+
+.skills-knowledge li {
+    margin-left: 20px;
+    padding: 5px;
+    border: thick double;
+
+    &:hover {
+        background-color: $primary-5;
+    }
+}
+
+.wordpress {
+    animation: bounce-in 3s;
+
+}
+
+.figma {
+    animation: bounce-in 3.5s;
+
+}
+
+.php {
+    animation: bounce-in 4s;
+}
+
+.symfony {
+    animation: bounce-in 4.5s;
+
+}
