@@ -14,15 +14,20 @@ import css3 from "../../assets/icons/css3.ico";
 import scss from "../../assets/icons/scss.ico";
 import js from "../../assets/icons/js.ico";
 import react from "../../assets/icons/react.ico";
-
+import { useDispatch, useSelector } from "react-redux";
+import { hover } from "../../features/page.slice";
 
 export default function Work() {
+  const dispatch = useDispatch()
+  const isHover = useSelector((state) => state.page)
+  console.log(isHover)
+
   return (
     <motion.section 
     className="work"
     exit={{opacity: 0, transition: { duration: .5 } }}
     >
-      <div className="work-wrapper">
+      <div onMouseOver={() => dispatch(hover)} className="work-wrapper">
         <ul>
           <li className="card-work work-1">
             <Link>
@@ -42,7 +47,7 @@ export default function Work() {
             </Link>
           </li>
           <li className="card-work work-2">
-            <Link to="https://fpw2.github.io/ohmyfood">
+            <a href="https://fpw2.github.io/ohmyfood" target="_blank">
               <div className="card-image">
                 <img src={ohmyfood} alt={ohmyfood} />
               </div>
@@ -55,7 +60,7 @@ export default function Work() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </li>
           <li className="card-work work-3">
             <Link>

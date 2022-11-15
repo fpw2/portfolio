@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit"
-import { pageReducer } from "../feature/page.slice"
+import { pageReducer } from "../features/page.slice"
 
 // devtools redux
 const store = configureStore({
