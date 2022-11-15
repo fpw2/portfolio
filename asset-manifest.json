@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/home/static/css/main.8248e1e1.css",
+    "main.js": "/portfolio/home/static/js/main.78fc2c00.js",
+    "static/media/petit_point.png": "/portfolio/home/static/media/petit_point.99ab74c1b6e7091353d3.png",
+    "static/media/Kasa.png": "/portfolio/home/static/media/Kasa.04867d6fa870072e6ee7.png",
+    "static/media/ohmyfood.png": "/portfolio/home/static/media/ohmyfood.63ecc66010d5fb532496.png",
+    "static/media/Booki.png": "/portfolio/home/static/media/Booki.728bbb3d176053da9485.png",
+    "static/media/argent-bank.png": "/portfolio/home/static/media/argent-bank.15bed25fb9c2ed1fc670.png",
+    "static/media/SuperM.png": "/portfolio/home/static/media/SuperM.24812e423559fa4b0b34.png",
+    "static/media/Fisheye.png": "/portfolio/home/static/media/Fisheye.692ee8e4ce1c178f474f.png",
+    "static/media/Les-petits-plats.png": "/portfolio/home/static/media/Les-petits-plats.c52d3fc0d975648625c7.png",
+    "static/media/logo.png": "/portfolio/home/static/media/logo.73de7fa0d92cd6493236.png",
+    "static/media/css3.ico": "/portfolio/home/static/media/css3.655d0032e4c4a374d3bf.ico",
+    "static/media/html5.ico": "/portfolio/home/static/media/html5.8d92f141fab82442be9b.ico",
+    "static/media/react.ico": "/portfolio/home/static/media/react.fc1294bc6efa2fe6278d.ico",
+    "static/media/scss.ico": "/portfolio/home/static/media/scss.cafbf4e49e9dff63ba86.ico",
+    "static/media/js.ico": "/portfolio/home/static/media/js.4ea7956ac679a7ee98dc.ico",
+    "index.html": "/portfolio/home/index.html",
+    "main.8248e1e1.css.map": "/portfolio/home/static/css/main.8248e1e1.css.map",
+    "main.78fc2c00.js.map": "/portfolio/home/static/js/main.78fc2c00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8248e1e1.css",
+    "static/js/main.78fc2c00.js"
+  ]
+}
