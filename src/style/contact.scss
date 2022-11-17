@@ -1,6 +1,5 @@
 .contact {
     background-color: $bg-contact;
-    // animation: fadeIn .5s ease-in-out;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -10,12 +9,11 @@
 
 .border-ext {
     animation: bounce-in-right 1s;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 2px solid $text;
     width: 850px;
     height: 486px;
     z-index: 1;
-    background-image: url("../assets/images/petit_point.png");
+    background-image: url("../assets/images/petits_points.png");
     background-position: center 0;
     z-index: 1;
 }
@@ -24,13 +22,15 @@
     display: flex;
     flex-direction: row;
     margin: 30px;
-    border: 2px solid white;
+    border: 2px solid $text;
     height: 426px;
     z-index: 1;
+    background-color: $bg-contact;
 }
 
 .contact-left {
     border-right: thick double ;
+    border-width: 3px;
     width: 45%;
     margin: 20px 20px;
     .contact-header {
@@ -81,11 +81,64 @@
 .contact-right {
     position: relative;
     width: 50%;
+    .contact-timbre {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin: 20px 0px 10px 0px;
+        }
+        input {
+            max-width: 200px;
+            outline: none;
+            border: none;
+            padding: 0.5em 0.5em;
+            font-size: 16px;
+            background-color: $primary-2;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+        textarea {
+            max-width: 370px;
+            height: 130px;
+            outline: none;
+            border: none;
+            padding: 0.75em 0.5em;
+            font-size: 16px;
+            background-color: $primary-2;
+            border: 1px solid white;
+            border-radius: 20px;
+            resize: none;
+        }
+        button {
+            padding: 0.75em 0.5em;
+            background-color: $neutral-6;
+            border: none;
+            width: 100px;
+            border-radius: 3px;
+            margin: 15px 22px;
+            color: $text;
+            align-self: flex-end;
+            font-weight: bolder;
+            &:hover {
+                cursor: pointer;
+            }
+            .arrow-right {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+::placeholder {
+    color: $neutral-7;
+    font-size: 14px;
+    font-family: "Poor Story";
 }
 
 
-.contact-timbre {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
+

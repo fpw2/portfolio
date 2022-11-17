@@ -32,7 +32,7 @@ export default function Skills() {
         exit={{opacity: 0}}
       >
         <div className="title-knowledge">
-          <p>Knowledge </p>
+          <p>I have some knowledge with :</p>
         </div>
         <div>
           <ul className="skills-knowledge">

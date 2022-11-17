@@ -7,7 +7,6 @@ import Fisheye from "../../assets/images/Fisheye.png";
 import LesPetitsPlats from "../../assets/images/Les-petits-plats.png";
 import Kasa from "../../assets/images/Kasa.png"
 import SuperM from "../../assets/images/SuperM.png"
-import ArgentBank from "../../assets/images/argent-bank.png"
 
 import html5 from "../../assets/icons/html5.ico";
 import css3 from "../../assets/icons/css3.ico";
@@ -47,7 +46,7 @@ export default function Work() {
             </Link>
           </li>
           <li className="card-work work-2">
-            <a href="https://fpw2.github.io/ohmyfood" target="_blank">
+            <a href="https://fpw2.github.io/ohmyfood" target="_blank" rel="noreferrer">
               <div className="card-image">
                 <img src={ohmyfood} alt={ohmyfood} />
               </div>
@@ -63,7 +62,7 @@ export default function Work() {
             </a>
           </li>
           <li className="card-work work-3">
-            <Link>
+            <a href="https://fpw2.github.io/fishEye/" target="_blank" rel="noreferrer">
               <div className="card-image">
                 <img src={Fisheye} alt={Fisheye} />
               </div>
@@ -77,10 +76,10 @@ export default function Work() {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           </li>
           <li className="card-work work-4">
-            <a href="https://fpw2.github.io/les-petits-plats">
+            <a href="https://fpw2.github.io/les-petits-plats" target="_blank" rel="noreferrer">
               <div className="card-image">
                 <img src={LesPetitsPlats} alt={LesPetitsPlats} />
               </div>
@@ -119,21 +118,6 @@ export default function Work() {
               <div className="card-body">
                 <div className="card-title">
                   <h4>SuperM</h4>
-                  <div>
-                    <img src={react} alt={react} />
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="card-work work-7">
-            <Link>
-              <div className="card-image">
-                <img src={ArgentBank} alt={ArgentBank} />
-              </div>
-              <div className="card-body">
-                <div className="card-title">
-                  <h4>ArgentBank</h4>
                   <div>
                     <img src={react} alt={react} />
                   </div>

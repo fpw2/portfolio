@@ -18,15 +18,15 @@ export default function Header() {
           </NavLink>
         </li>
         <img className="separator" src={line} alt="separator" />
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink
             to="/about"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             ABOUT
           </NavLink>
-        </li>
-        <img className="separator" src={line} alt="separator" />
+        </li> */}
+        {/* <img className="separator" src={line} alt="separator" /> */}
         <li className="nav-item">
           <NavLink
             to="/skills"
