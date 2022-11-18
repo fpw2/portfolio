@@ -15,6 +15,7 @@ import js from "../../assets/icons/js.ico";
 import react from "../../assets/icons/react.ico";
 import { useDispatch, useSelector } from "react-redux";
 import { hover } from "../../features/page.slice";
+{/* <FontAwesomeIcon icon="fa-solid fa-share-from-square" /> */}
 
 export default function Work() {
   const dispatch = useDispatch()

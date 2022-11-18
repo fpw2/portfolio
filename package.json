@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://fpw2.github.io/portfolio/home",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fpw2.github.io/",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.9.1",
