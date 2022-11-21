@@ -15,13 +15,13 @@ export const works = [
         title: "Booki",
         img: Booki,
         technology: [html5, css3],
-        link: ""
+        link: "https://fpw-booki.netlify.app"
     },
     {
         title: "Ohmyfood",
         img: ohmyfood,
         technology: [html5, scss],
-        link:" https://fpw2.github.io/ohmyfood"
+        link: "https://fpw2.github.io/ohmyfood"
     },
     {
         title: "Fisheye",
