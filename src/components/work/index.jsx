@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useDispatch, useSelector } from "react-redux";
-import { hover } from "../../features/page.slice";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
+// import { useDispatch, useSelector } from "react-redux";
+// // import { hover } from "../../features/page.slice";
+// import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { works } from "../../data/works";
 
 export default function Work() {
-  const dispatch = useDispatch();
-  const isHover = useSelector((state) => state.page);
-  const [isShown, setIsShown] = useState(false);
+  // const dispatch = useDispatch();
+  // const isHover = useSelector((state) => state.page);
+  // const [isShown, setIsShown] = useState(false);
 
   return (
     <motion.section
@@ -24,19 +23,19 @@ export default function Work() {
               <li key={work.title} className="card-work work-1">
                 <a href={work.link} target="_blank" rel="noreferrer">
                   <div
-                    className={`card-image ${isShown ? "hover" : ""}`}
+                    className="card-image"
                     // onMouseEnter={() => setIsShown(true)}
                     // onMouseLeave={() => setIsShown(false)}
                     // onMouseEnter={() => setIsShown(true)}
                     // onMouseLeave={() => setIsShown(false)}
                   >
                     <img src={work.img} alt={work.title} />
-                    {isShown && (
+                    {/* {isShown && (
                       <div className={`card-image-hover ${isShown ? "block" : "none"}`} >
                         Visit the site
                         <FontAwesomeIcon icon={faShareFromSquare} />
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </a>
                 <div className="card-body">
