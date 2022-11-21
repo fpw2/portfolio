@@ -27,7 +27,7 @@ export const works = [
         title: "Fisheye",
         img: Fisheye,
         technology: [html5, css3, js],
-        link: "https://fpw2.github.io/fishEye"
+        link: "https://fpw-fisheye.netlify.app"
     },
     {
         title: "Les petits plats",

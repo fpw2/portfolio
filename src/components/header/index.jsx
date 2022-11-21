@@ -4,6 +4,7 @@ import line from "../../assets/line.png";
 export default function Header() {
   let activeStyle = {
     textDecoration: "underline",
+    color: "#c8aa6e"
   };
 
   return (
@@ -11,8 +12,9 @@ export default function Header() {
       <nav className="nav">
         <li className="nav-item">
           <NavLink
-            to="/home"
+            to="/"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            end
           >
             HOME
           </NavLink>

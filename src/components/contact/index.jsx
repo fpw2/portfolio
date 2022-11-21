@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Stamp from "../utils/Stamp";
 
 export default function Contact() {
   const form = useRef();
@@ -89,9 +90,10 @@ export default function Contact() {
           </div>
           <div className="contact-right">
             <div className="contact-header">
-              <div className="contact-timbre">
+              {/* <div className="contact-timbre">
                 <img src={timbre} width="60px" alt={timbre} />
-              </div>
+              </div> */}
+              <Stamp />
               <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <label htmlFor="name-company">Name/Company</label>
                 <input
