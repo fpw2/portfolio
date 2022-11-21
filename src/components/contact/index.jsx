@@ -1,5 +1,4 @@
 import logo from "../../assets/logo.png";
-import timbre from "../../assets/images/timbre.png";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -90,9 +89,6 @@ export default function Contact() {
           </div>
           <div className="contact-right">
             <div className="contact-header">
-              {/* <div className="contact-timbre">
-                <img src={timbre} width="60px" alt={timbre} />
-              </div> */}
               <Stamp />
               <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <label htmlFor="name-company">Name/Company</label>
