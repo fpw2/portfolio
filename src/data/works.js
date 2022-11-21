@@ -45,6 +45,6 @@ export const works = [
         title: "SuperM",
         img: SuperM,
         technology: [react],
-        link: ""
+        link: "https://fpw-supermarket.netlify.app"
     },
 ]
