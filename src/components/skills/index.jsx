@@ -23,7 +23,7 @@ export default function Skills() {
         <div className="skills-describe">
           I have been building websites daily for over a year in JavaScript,
           whether with a model or from an existing project. I work on vanilla
-          and mainly on React/React Native/Redux framework with good
+          and mainly on React/Native React/Redux framework with good
           capabilities.
         </div>
       </motion.div>
