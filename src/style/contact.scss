@@ -140,5 +140,55 @@
     font-family: "Poor Story";
 }
 
-
-
+@media screen and (max-width: 1023px){
+    .contact {
+        height: 110vh;
+        .border-ext {
+            margin-top: 80px;
+            height: 760px;
+            width: 400px;
+            .border-int {
+                height: 700px;
+                flex-direction: column;
+                .contact-left {
+                    margin-bottom: 0px;
+                    padding-bottom: 30px;
+                    width: 90%;
+                    border-right: none;
+                    border-bottom: thick double;
+                    .contact-header {
+                        width: 100%;
+                        img {
+                            height: 80px;
+                            width: 80px;
+                            padding-right: 0px;
+                        }
+                        p {
+                            padding-left: 20px;
+                            font-size: 22px;
+                            white-space: nowrap;
+                        }
+                    }
+                    .contact-describe {
+                        p {
+                            font-size: 18px;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+                .contact-right {
+                    width: 100%;
+                    margin: 20px 20px;
+                    .contact-form {
+                        textarea {
+                            max-width: 290px;
+                        }
+                    }
+                    .contact-timbre {
+                        right: 30px;
+                    }
+                }
+            }
+    }
+    }
+}

@@ -20,8 +20,8 @@ export default function Work() {
         <ul>
           {works.map((work) => {
             return (
-              <li key={work.title} className="card-work work-1">
-                <a href={work.link} target="_blank" rel="noreferrer">
+              <li key={work.title} className={`card-work work-${work.id}`} >
+                <a href={work.link} key={work.title} target="_blank" rel="noreferrer">
                   <div
                     className="card-image"
                     // onMouseEnter={() => setIsShown(true)}
@@ -42,8 +42,8 @@ export default function Work() {
                   <div className="card-title">
                     <h4>{work.title}</h4>
                     <div>
-                      {work.technology.map((technology) => {
-                        return <img src={technology} alt={technology}></img>;
+                      {work.technology.map((technology, index) => {
+                        return <img key={index} src={technology} alt={technology}></img>;
                       })}
                     </div>
                   </div>

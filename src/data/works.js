@@ -12,36 +12,42 @@ import react from "../assets/icons/react.ico";
 
 export const works = [
     {
+        id: 1,
         title: "Booki",
         img: Booki,
         technology: [html5, css3],
         link: "https://fpw-booki.netlify.app"
     },
     {
+        id: 2,
         title: "Ohmyfood",
         img: ohmyfood,
         technology: [html5, scss],
         link: "https://fpw2.github.io/ohmyfood"
     },
     {
+        id: 3,
         title: "Fisheye",
         img: Fisheye,
         technology: [html5, css3, js],
         link: "https://fpw-fisheye.netlify.app"
     },
     {
+        id: 4,
         title: "Les petits plats",
         img: LesPetitsPlats,
         technology: [html5, css3, js],
         link: "https://fpw2.github.io/les-petits-plats"
     },
     {
+        id: 5,
         title: "Kasa",
         img: Kasa,
         technology: [react],
         link: "https://fpw-kasa.netlify.app"
     },
     {
+        id: 6,
         title: "SuperM",
         img: SuperM,
         technology: [react],

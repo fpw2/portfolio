@@ -72,3 +72,37 @@
     animation: bounce-in 4.5s;
 
 }
+
+@media screen and (max-width: 1023px) {
+    .skills-wrapper {
+      display: unset;
+      div {
+        width: 100%;
+      }
+      .skills-name {
+        margin-bottom: 20px;
+      }
+      .skills-describe {
+        text-align: center;
+    }
+    }
+    .js {
+      margin-top: 0px;
+    }
+    .title-knowledge {
+        display: none;
+    }
+    .skills-knowledge .wordpress {
+        margin-left: 0px;
+    }
+  }
+
+@media screen and (max-width: 550px) {
+    .skills-name {
+        font-size: 36px;
+    }
+    .skills-describe {
+        font-size: 20px;
+    }
+ 
+}
