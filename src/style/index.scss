@@ -1,12 +1,14 @@
 @import "./variables.scss";
 @import "./base.scss";
-@import "./header.scss";
-@import "./home.scss";
-@import "./about.scss";
-@import "./skills.scss";
-@import "./work.scss";
-@import "./contact.scss";
 @import "./modal.scss";
+@import "../components/header/header.scss";
+@import "../components/home/home.scss";
+@import "../components/about/about.scss";
+@import "../components/skills/skills.scss";
+@import "../components/works/work.scss";
+@import "../components//works/workDetails.scss";
+@import "../components/contact/contact.scss";
+@import "../components/error/error.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto&display=swap');
 

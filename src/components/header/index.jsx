@@ -40,10 +40,10 @@ export default function Header() {
         <img className="separator" src={line} alt="separator" />
         <li className="nav-item">
           <NavLink
-            to="/work"
+            to="/works"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            WORK
+            WORKS
           </NavLink>
         </li>
         <img className="separator" src={line} alt="separator" />

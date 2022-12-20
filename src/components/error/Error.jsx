@@ -1,5 +1,29 @@
 export default function Error() {
-    return (
-        <div className="error">Cette page n'existe pas</div>
-    )
+  return (
+    <>
+      <div className="error">
+        <div>
+          <p className="error-404">ERROR 404</p>
+          <p>The page you were looking does not exist,</p>
+          <p>use the navigation at <mark>top.</mark> </p>
+        </div>
+        <div className="arrow">
+          <svg
+            id="arrow-svg"
+            width="151"
+            height="184"
+            viewBox="0 0 151 184"
+            fill="none"
+          >
+            <path
+              d="M2 181C8.55865 181.729 15.1127 182 21.9444 182C35.5645 182 48.5757 175.773 60.2222 169.222C69.6075 163.943 82.0884 157.006 88 147.778C93.1818 139.689 98.4648 131.456 102.944 122.944C108.592 112.214 113.439 101.561 117.778 90.2222C119.786 84.9738 121.166 79.348 123.444 74.2222C125.573 69.4335 128.298 65.6511 129.5 60.4444C133.563 42.8398 139.645 26.1976 142.778 8.44445C143.004 7.16164 144.746 3.79525 143.778 4.66667C141.632 6.59778 139.688 8.8407 137.778 11C133.641 15.6767 128.556 19.6234 124.611 24.4444C119.967 30.1207 134.557 13.6469 139.889 8.61111C141.393 7.19083 145.775 -1.72397 147.222 2.77778C150.168 11.9426 149 22.475 149 32"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </>
+  );
 }

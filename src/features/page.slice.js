@@ -11,7 +11,7 @@ const pageSlice = createSlice({
     initialState,
     reducers: {
         hover: (state) => {
-            state.hoverWork = !state.hoverWork
+            state.hoverWork = true
         }
     },
 })

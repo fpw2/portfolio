@@ -1,0 +1,40 @@
+.error {
+        background-color: $neutral-7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        font-size: 28px;
+    div {
+        :nth-child(1) {
+            text-align: center;
+        }
+        :nth-child(3) {
+            justify-content: space-around !important;
+        }
+    }
+}
+
+.error-404 {
+    font-size: 36px;
+}
+
+.arrow {
+    margin-bottom: 80px;
+    padding-left: 40px;
+}
+
+#arrow-svg {
+    stroke-dasharray: 1057px;
+    stroke-dashoffset: 1057px;
+    animation: arrow 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes arrow{
+    to {
+        stroke-dashoffset: 0;
+    }
+}

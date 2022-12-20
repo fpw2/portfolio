@@ -1,0 +1,88 @@
+.work-wrapper {
+    background-color: $bg-work;
+    height: 917px;
+    color: $neutral-2;
+}
+
+.work-screen {
+    position: relative;
+    padding-top: 180px;
+}
+
+.work-details {
+    display: flex;
+    height: 437px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid rgb(247, 247, 247);
+    width: 800px;
+    margin: auto;
+    .work-image {
+        width: 60%;
+        // disposer img dans mon block
+        display: flex;
+        align-items: center; // verticalement
+        justify-content: flex-end; // horizontalement
+        padding-left: 20px;
+        img {
+            // faire un ratio d'une image
+            width: auto;
+            height: 347px;
+        }
+    }
+    .work-describe {
+        width: 40%;
+        height: 100%;
+        position: relative;
+        // aligne verticalement
+        align-self: center;
+        padding: 40px 20px 40px 40px;
+        .work-title {
+            .work-header {
+                padding-bottom: 30px;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+            .technology {
+                padding-bottom: 30px ;
+                .framework {
+                    padding-top: 10px;
+                }
+            }
+            a {               
+                p {
+                    font-size: 24px;
+                    border-radius: 8px;
+                    color: $primary-4;
+                    cursor: pointer;
+                    &:hover {
+                        color: $primary-3;
+                    }
+                    .view-site {
+                        position: absolute;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.base-screen {
+    position: relative;
+    background-image: url("../../assets/desktop/base.png");
+    background-repeat: no-repeat;
+    align-self: center;
+    height: 67px;
+    width: 197px;
+    margin: auto;
+}
+
+
+
+
