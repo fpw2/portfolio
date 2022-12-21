@@ -57,16 +57,19 @@ a {
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid white;
+    &:hover {
+      animation: shake .5s forwards;
+    }
+    img {
+      padding: 10px;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      // delete the little gap betweed the div and img
+      vertical-align: middle;
+    }
   }
 
-  .card-image img {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    // delete the little gap betweed the div and img
-    vertical-align: middle;
-  }
   
   .card-body {
     text-align: left;
@@ -93,3 +96,14 @@ a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@keyframes shake{
+  0% {
+    transform: rotateZ(-1deg);
+  } 
+
+  100% {
+    transform:  rotateZ(1deg);
+  }
+}
+

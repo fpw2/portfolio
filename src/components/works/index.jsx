@@ -6,7 +6,6 @@ export default function Works() {
   return (
     <motion.section
       className="works"
-      exit={{ opacity: 0, transition: { duration: 0.5 } }}
     >
       <div className="works-wrapper">
         <ul>

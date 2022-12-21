@@ -1,77 +1,98 @@
-.work-wrapper {
-    background-color: $bg-work;
-    height: 917px;
+// button fermeture fenetre ecran
+.close-screen {
+    position: absolute;
+    right: 10px;
+    top: 10px;
     color: $neutral-2;
 }
 
-.work-screen {
-    position: relative;
-    padding-top: 180px;
+// button lien site
+.view-site {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    animation: bounce-link 1s infinite reverse;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
 }
 
-.work-details {
-    display: flex;
-    height: 437px;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid rgb(247, 247, 247);
-    width: 800px;
-    margin: auto;
-    .work-image {
-        width: 60%;
-        // disposer img dans mon block
-        display: flex;
-        align-items: center; // verticalement
-        justify-content: flex-end; // horizontalement
-        padding-left: 20px;
-        img {
-            // faire un ratio d'une image
-            width: auto;
-            height: 347px;
-        }
-    }
-    .work-describe {
-        width: 40%;
-        height: 100%;
-        position: relative;
-        // aligne verticalement
-        align-self: center;
-        padding: 40px 20px 40px 40px;
-        .work-title {
-            .work-header {
-                padding-bottom: 30px;
+.work-wrapper {
+    background-color: $bg-work;
+    height: 937px;
+    color: $neutral-2;
 
-                p {
-                    font-size: 18px;
+    .work-screen {
+        padding-top: 180px;
+        display: block;
+        left: 150px;
+        animation: fade-in-up .5s;
+
+        .work-details {
+            position: relative;
+            display: flex;
+            height: 437px;
+            background-color: white;
+            border-radius: 15px;
+            border: 1px solid rgb(247, 247, 247);
+            width: 800px;
+            margin: auto;
+
+            .work-image {
+                width: 60%;
+                // disposer img dans mon block
+                display: flex;
+                align-items: center; // verticalement
+                justify-content: flex-end; // horizontalement
+                padding-left: 20px;
+
+                img {
+                    // faire un ratio d'une image
+                    width: auto;
+                    height: 347px;
                 }
             }
-            .technology {
-                padding-bottom: 30px ;
-                .framework {
-                    padding-top: 10px;
-                }
-            }
-            a {               
-                p {
-                    font-size: 24px;
-                    border-radius: 8px;
-                    color: $primary-4;
-                    cursor: pointer;
-                    &:hover {
-                        color: $primary-3;
+
+            .work-describe {
+                width: 40%;
+                height: 100%;
+                position: relative;
+                // aligne verticalement
+                align-self: center;
+                padding: 40px 20px 40px 40px;
+
+                .work-title {
+                    .work-header {
+                        padding-bottom: 30px;
+
+                        p {
+                            font-size: 18px;
+                        }
                     }
-                    .view-site {
-                        position: absolute;
-                        right: 20px;
-                        bottom: 20px;
+
+                    .technology {
+                        padding-bottom: 30px;
+
+                        .framework {
+                            padding-top: 10px;
+                        }
+                    }
+
+                    a {
+                        p {
+                            font-size: 24px;
+                            border-radius: 8px;
+                            color: $primary-4;
+                            cursor: pointer;
+                            &:hover {
+                                color: $primary-3;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-
-
 
 .base-screen {
     position: relative;
@@ -80,9 +101,38 @@
     align-self: center;
     height: 67px;
     width: 197px;
-    margin: auto;
+    // centrage
+    margin: 0 auto;
+    // décale de 30 px pour être centré
+    left: 30px;
 }
 
+@keyframes fade-in-up {
+    0% {
+        transform: translateY(2000px);
+    }
 
+    100% {
+        transform: translateY(0);
+    }
+}
 
+@keyframes bounce-link {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateX(-1px);
+    }
+    
+    40% {
+        transform: translateX(1px);
+    }
+  
+    60% {
+      transform: translateX(1px);
+    }
+}
 
