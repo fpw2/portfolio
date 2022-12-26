@@ -21,7 +21,7 @@ export default function WorkDetails() {
               <div className="work-title">
                 <div className="work-header">
                   <h1>{work.title}</h1>
-                  <p>{work.describe}</p>
+                  <p className="describe">{work.describe}</p>
                 </div>
                 <div className="technology">
                   <h3>Technologies used :</h3>

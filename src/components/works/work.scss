@@ -3,8 +3,8 @@ a {
 }
 
 .works {
-    min-height: 937px;
     background-color: $bg-work;
+    height: 100vh;
   }
   
   .works-wrapper{
@@ -17,6 +17,7 @@ a {
     margin: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
   }
   
   .card-work {
@@ -70,7 +71,6 @@ a {
     }
   }
 
-  
   .card-body {
     text-align: left;
   }
@@ -86,9 +86,11 @@ a {
   }
 
 @media screen and (max-width: 1023px) {
-  .works-wrapper ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .works-wrapper {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 }
 
 @media screen and (max-width: 680px) {
