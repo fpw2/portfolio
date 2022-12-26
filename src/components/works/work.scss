@@ -5,6 +5,7 @@ a {
 .works {
     background-color: $bg-work;
     height: 100vh;
+    overflow-y: scroll !important;
   }
   
   .works-wrapper{
