@@ -18,15 +18,16 @@
 
 .work-wrapper {
     background-color: $bg-work;
-    height: 937px;
+    height: 100vh;
     color: $neutral-2;
-
+    overflow-x: scroll; 
+    
     .work-screen {
         padding-top: 180px;
         display: block;
         left: 150px;
         animation: fade-in-up .5s;
-
+        
         .work-details {
             position: relative;
             display: flex;
@@ -110,7 +111,7 @@
 @media screen and (max-width: 800px) {
     .work-wrapper{
         .work-screen{
-            padding-top: 100px;
+            padding-top: 180px;
             .work-details {
                 height: 680px;
                 width: 500px;
@@ -118,11 +119,13 @@
                 .work-image {
                     align-self: center;
                     justify-content: center;
+                    padding-left: 0;
                 }
                 .work-describe {
                     justify-content: baseline;
                     align-self: baseline;
                     width: 100%;
+                    padding: 40px;
                     .technology {
                         padding-bottom: 0px !important;
                     }
