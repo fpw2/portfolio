@@ -123,6 +123,9 @@
                     justify-content: baseline;
                     align-self: baseline;
                     width: 100%;
+                    .technology {
+                        padding-bottom: 0px !important;
+                    }
                     .view-site {
                         position: absolute;
                         right: 20px;

@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
+    overflow-y: scroll ;
 }
 
 .border-ext {
@@ -145,7 +146,8 @@
         height: 110vh;
         align-items: baseline;
         .border-ext {
-            margin-top: 170px;
+            margin-top: 70px;
+            margin-bottom: 80px;
             height: 760px;
             width: 400px;
             .border-int {
